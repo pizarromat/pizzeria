@@ -260,16 +260,28 @@ footer{
     color: black;
     font-family: 'Poppins', sans-serif ;
 }
+.titulo-stock{
+    display: flex;
+    justify-content: center;
+    padding: 2rem 0 0 0;
+    font-size: 40px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: black;
+    font-family: 'Poppins', sans-serif ;
+}
 
 
-.todas-pizzas{
+
+.items{
     display: grid;
     grid-template-columns: auto auto auto;
     padding: 130px;
     gap: 70px;
     place-items: center;
-}
-.galeria{
+  }
+  
+  .item {
     width: 240px;
     height: 280px;
     padding: .8em;
@@ -277,43 +289,51 @@ footer{
     position: relative;
     overflow: visible;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-}
-.imagen-pizza{
+  }
+  
+  
+  .item-image {
     background-color: #ffcaa6;
     height: 100px;
     width: 100%;
     border-radius: 0.5em;
     transition: .3s ease;
-}
-.informacion-pizza{
+  }
+  
+  .informacion-pizza{
     padding-top: 10%;
-}
-.texto-nombre{
+  }
+  
+  .item-title {
     margin-top: 0;
     margin-bottom: 1rem;
     font-size: .9em;
     padding-bottom: 10px;
-}
-.precio-pizza{
+  }
+  
+  .item-details {
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding-top: 10px;
     border-top: 1px solid #ddd;
-}
-.precio{
+  }
+  
+  .item-price{
     font-weight: 900;
     font-size: 15px;
     line-height: 1.5;
-}
-.boton-precio{
+  }
+  
+  .boton-precio{
     display: flex;
     padding: .3em;
     cursor: pointer;
     transition: .3s ease-in-out;
-}
-.boton{
+  }
+  
+  .boton{
     background-color: red;
     border: 1px solid transparent;
     border-radius: .75rem;
@@ -335,21 +355,74 @@ footer{
     -webkit-user-select: none;
     touch-action: manipulation;
     width: auto;
-}
-.boton:hover{
+  }
+  .boton:hover{
     background-color: lightcoral;
-}
-.boton:focus{
+  }
+  .boton:focus{
     box-shadow: none;
     outline: 2px solid white;
     outline-offset: 2px;
-}
+  }
+
+  /* ? SHOPPING CART */
+  .shopping-cart-items {
+    padding: 20px 0px;
+  }
+  
+  .shopping-cart-header {
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .shopping-cart-image {
+    max-width: 80px;
+    border-radius: 20px;
+  }
+  
+  .shopping-cart-quantity-input {
+    max-width: 45px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background: #eee;
+    padding: 5px;
+  }
+  
+  .shopping-cart-total {
+    min-height: 96px;
+  }
+  
 .stock{
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
+/* carrito --------------------------------------- */
+
+.shopping-cart-items {
+    padding: 20px 0px;
+  }
+  
+  .shopping-cart-header {
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .shopping-cart-image {
+    max-width: 80px;
+    border-radius: 20px;
+  }
+  
+  .shopping-cart-quantity-input {
+    max-width: 45px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background: #eee;
+    padding: 5px;
+  }
+  
+  .shopping-cart-total {
+    min-height: 96px;
+  }
 
 /* Nosotros -------------------------------------------------- */
 
